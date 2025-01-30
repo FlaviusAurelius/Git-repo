@@ -1,8 +1,4 @@
 from typing import List
-
-
-# https://www.youtube.com/watch?v=bNvIQI2wAjk&ab_channel=NeetCode
-#  rewatch the animation and implement
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         # store everything in the output array
@@ -12,10 +8,13 @@ class Solution:
         output = [1] * len(nums)
         pre = 1
         post = 1
-        for i in range(len(nums)):
-            break #change here
-        for i in range(len(nums)):
-            break #change here
+        for i in range(0, len(nums)):
+            output[i] = pre
+            pre *= nums[i]
+        for i in range(len(nums)-1, -1, -1): 
+            output[i] *= post
+            post *= nums[i]
+            
         
         return output
     
