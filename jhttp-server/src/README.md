@@ -1,1 +1,1 @@
-
+JHTTP is a lightweight HTTPS server written in Java that serves static files and supports basic authentication. It is built using Java’s SSL/TLS support, utilizing a Java KeyStore (JKS) file for secure communication. Users are authenticated using Base64-encoded credentials stored in users.txt.
