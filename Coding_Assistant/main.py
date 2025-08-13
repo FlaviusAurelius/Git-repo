@@ -8,8 +8,6 @@ from functions.calling_function import call_function
 
 def main():
     # check if user requested verbose output and Process user input
-    print("Welcome to Coding assistant")
-    
     verbose = "--verbose" in sys.argv
     args = []
     for arg in sys.argv[1:]:
