@@ -1,0 +1,19 @@
+- cargo new hello_cargo 
+    Creates a new project and new directory called hello_cargo. Cargo will have generated the following:
+|   cargo.toml      
+|       In TOML format, cargo's config format. Stores information and packages
+|   main.rs
+|       
+
+- cargo build
+    Creates an executable in target/debug/project_name rather than in current directory because default build is a DEBUG BUILD
+        -- also creates a new file at the top level called cargo.lock and it keeps track of the exact versions of dependencies in your project.
+- cargo run
+    compiles the code and run the resulting exe in one command, saves time during test by not having to type cargo build repeatedly
+
+- cargo check
+    checks code and make sure it compiles. Doesn't produce an exe
+
+- cargo build --release
+    compiles the code with optimizations. This creates an exe in target/release directory and makes the code run faster, but increases the compilation time
+        
