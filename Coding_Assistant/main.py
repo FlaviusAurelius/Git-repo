@@ -8,6 +8,8 @@ from functions.calling_function import call_function
 
 def main():
     # check if user requested verbose output and Process user input
+    print("Welcome to Coding assistant")
+    
     verbose = "--verbose" in sys.argv
     args = []
     for arg in sys.argv[1:]:
@@ -86,3 +88,6 @@ def content_generation(client, messages, verbose):
         function_results.append(function_call_result)  # Collect all output by model
             
     return response, function_results
+
+if __name__ == "__main__":
+    main()
